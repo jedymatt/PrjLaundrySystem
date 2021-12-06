@@ -37,6 +37,8 @@ Partial Class FrmCustomer
         Me.TxtContact = New System.Windows.Forms.TextBox()
         Me.TxtEmail = New System.Windows.Forms.TextBox()
         Me.BtnSave = New System.Windows.Forms.Button()
+        Me.BtnUpdate = New System.Windows.Forms.Button()
+        Me.BtnClose = New System.Windows.Forms.Button()
         Me.SuspendLayout()
         '
         'Label1
@@ -162,18 +164,38 @@ Partial Class FrmCustomer
         '
         'BtnSave
         '
-        Me.BtnSave.Location = New System.Drawing.Point(238, 433)
+        Me.BtnSave.Location = New System.Drawing.Point(238, 431)
         Me.BtnSave.Name = "BtnSave"
         Me.BtnSave.Size = New System.Drawing.Size(143, 33)
         Me.BtnSave.TabIndex = 20
         Me.BtnSave.Text = "Save"
         Me.BtnSave.UseVisualStyleBackColor = True
         '
+        'BtnUpdate
+        '
+        Me.BtnUpdate.Location = New System.Drawing.Point(238, 432)
+        Me.BtnUpdate.Name = "BtnUpdate"
+        Me.BtnUpdate.Size = New System.Drawing.Size(116, 32)
+        Me.BtnUpdate.TabIndex = 21
+        Me.BtnUpdate.Text = "Update"
+        Me.BtnUpdate.UseVisualStyleBackColor = True
+        '
+        'BtnClose
+        '
+        Me.BtnClose.Location = New System.Drawing.Point(505, 432)
+        Me.BtnClose.Name = "BtnClose"
+        Me.BtnClose.Size = New System.Drawing.Size(98, 32)
+        Me.BtnClose.TabIndex = 22
+        Me.BtnClose.Text = "Close"
+        Me.BtnClose.UseVisualStyleBackColor = True
+        '
         'FrmCustomer
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(9.0!, 20.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.ClientSize = New System.Drawing.Size(800, 519)
+        Me.Controls.Add(Me.BtnClose)
+        Me.Controls.Add(Me.BtnUpdate)
         Me.Controls.Add(Me.BtnSave)
         Me.Controls.Add(Me.TxtEmail)
         Me.Controls.Add(Me.TxtContact)
@@ -211,4 +233,6 @@ Partial Class FrmCustomer
     Friend WithEvents TxtContact As TextBox
     Friend WithEvents TxtEmail As TextBox
     Friend WithEvents BtnSave As Button
+    Friend WithEvents BtnUpdate As Button
+    Friend WithEvents BtnClose As Button
 End Class

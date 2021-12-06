@@ -108,6 +108,18 @@
     <Compile Include="FrmDisplayCustomers.vb">
       <SubType>Form</SubType>
     </Compile>
+    <Compile Include="FrmDisplayGarments.Designer.vb">
+      <DependentUpon>FrmDisplayGarments.vb</DependentUpon>
+    </Compile>
+    <Compile Include="FrmDisplayGarments.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmGarment.Designer.vb">
+      <DependentUpon>FrmGarment.vb</DependentUpon>
+    </Compile>
+    <Compile Include="FrmGarment.vb">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Include="My Project\AssemblyInfo.vb" />
     <Compile Include="My Project\Application.Designer.vb">
       <AutoGen>True</AutoGen>
@@ -128,6 +140,15 @@
   <ItemGroup>
     <EmbeddedResource Include="FrmCustomer.resx">
       <DependentUpon>FrmCustomer.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmDisplayCustomers.resx">
+      <DependentUpon>FrmDisplayCustomers.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmDisplayGarments.resx">
+      <DependentUpon>FrmDisplayGarments.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmGarment.resx">
+      <DependentUpon>FrmGarment.vb</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="My Project\Resources.resx">
       <Generator>VbMyResourcesResXFileCodeGenerator</Generator>

@@ -6,6 +6,10 @@ Module Database
         .ConnectionString = GetConnectionString()
     }
 
+    Public Cmd As New MySqlCommand() With {
+        .Connection = GetConnection()
+    }
+
     Public Function GetConnection() As MySqlConnection
         If Conn.State = ConnectionState.Closed Then
             'Conn = New MySqlConnection(GetConnectionString)
@@ -19,6 +23,8 @@ Module Database
             ConnectionStrings("DatabaseConnectionString").
             ConnectionString
     End Function
+
+
 
     Public Function ExecuteCommand(cmd As MySqlCommand) As DataTable
         Dim da As MySqlDataAdapter
